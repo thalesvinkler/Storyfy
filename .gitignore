@@ -1,0 +1,6 @@
+.DS_Store
+DerivedData/
+*.xcuserstate
+xcuserdata/
+ios/Storyfy.xcodeproj/
+.build/
