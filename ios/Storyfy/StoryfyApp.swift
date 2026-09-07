@@ -9,6 +9,9 @@ struct StoryfyApp: App {
             RootView()
                 .environment(model)
                 .tint(StoryfyTheme.coral)
+                .task {
+                    await MonthlyReminderService.shared.configure()
+                }
         }
     }
 }

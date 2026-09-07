@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		007148698DD93581EA72AE0D /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1533E480F21A2CB32C5E63B5 /* AppModel.swift */; };
+		04A78998337E7F14554240AF /* StoryfyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459CBDBF6243EE0BA1988886 /* StoryfyModels.swift */; };
+		0C0E45E24A0D696862E8AD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0AA6EC251A29BAD7FA501E /* Assets.xcassets */; };
+		0D13A275C01491C47C4B8A99 /* PersistenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC2C0A6F841E72EEE244B4C /* PersistenceStore.swift */; };
+		0D65D58B1AEBCE22AAEA3041 /* FinishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BB8A13204993EC517F8590 /* FinishView.swift */; };
+		206E18DBB81E79220AA32C80 /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C738EDDD4CA6A82EA93719 /* ReviewView.swift */; };
+		25EE40C2F9AC4F9F4D27C790 /* MonthIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC8F957F32BBF726D7E1292 /* MonthIntervalTests.swift */; };
+		3299D63E7E1F0161DF5FA8AA /* WritingStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A57BAEB1912233F7FBBD842 /* WritingStyleView.swift */; };
+		60193FE19AC022D514B89E16 /* CaptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65BA9C5FB2DA41893292248 /* CaptionView.swift */; };
+		60BDB92645A449C2BEBE48ED /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD95570F3DD402C02D7F1348 /* RootView.swift */; };
+		660D4EC438E8A4122ED748E9 /* CaptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A3278F64AB25A82B45CC1 /* CaptionService.swift */; };
+		75128BA9C218F3FB01809A5A /* PhotoThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB89059F82B98DF7A53B8DB /* PhotoThumbnail.swift */; };
+		7836E3C4D3DFE165086C6E5B /* StoryfyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F10C25173BD8ED787B2C67 /* StoryfyApp.swift */; };
+		811BB54F75207763D21B6B43 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79216DEBC2632B786D893E6C /* HomeView.swift */; };
+		95000602F9EB51A83FEA7E18 /* CurationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E7BF2D2B2554081504F726 /* CurationService.swift */; };
+		964432164BA6B3A82809F1C5 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B24853D0BC7A618FFD62B9 /* PrivacyView.swift */; };
+		9E35032E5FA1BCAD1AE3E9AD /* StoryfyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B51926E5EE8BA378F2E05028 /* StoryfyTheme.swift */; };
+		A0CB273EA9FBC216CC356AC0 /* PhotoLibraryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721C373753FFEA7AB1D0BB08 /* PhotoLibraryService.swift */; };
+		A47047C4D5D545894873B37C /* ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4640E9C4962B0E0DF4611E /* ProcessingView.swift */; };
+		EEBE1A51499999425AC3C0B1 /* PersistenceStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EE23B9595E8BC279E1D685 /* PersistenceStoreTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3BEEAB5DA3DFD975D81AF42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DED12BA94F784E9556C39484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB3581FA78D7EDA09F3CAC3E;
+			remoteInfo = Storyfy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1533E480F21A2CB32C5E63B5 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		1A57BAEB1912233F7FBBD842 /* WritingStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritingStyleView.swift; sourceTree = "<group>"; };
+		28005F2C2587EBE2E6364C96 /* StoryfyTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = StoryfyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC8F957F32BBF726D7E1292 /* MonthIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthIntervalTests.swift; sourceTree = "<group>"; };
+		401A3278F64AB25A82B45CC1 /* CaptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionService.swift; sourceTree = "<group>"; };
+		459CBDBF6243EE0BA1988886 /* StoryfyModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryfyModels.swift; sourceTree = "<group>"; };
+		51BB8A13204993EC517F8590 /* FinishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishView.swift; sourceTree = "<group>"; };
+		63F10C25173BD8ED787B2C67 /* StoryfyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryfyApp.swift; sourceTree = "<group>"; };
+		66C738EDDD4CA6A82EA93719 /* ReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewView.swift; sourceTree = "<group>"; };
+		6A4640E9C4962B0E0DF4611E /* ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingView.swift; sourceTree = "<group>"; };
+		721C373753FFEA7AB1D0BB08 /* PhotoLibraryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryService.swift; sourceTree = "<group>"; };
+		79216DEBC2632B786D893E6C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		79B24853D0BC7A618FFD62B9 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		79E7BF2D2B2554081504F726 /* CurationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurationService.swift; sourceTree = "<group>"; };
+		8CC2C0A6F841E72EEE244B4C /* PersistenceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStore.swift; sourceTree = "<group>"; };
+		95EE23B9595E8BC279E1D685 /* PersistenceStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceStoreTests.swift; sourceTree = "<group>"; };
+		9FB89059F82B98DF7A53B8DB /* PhotoThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoThumbnail.swift; sourceTree = "<group>"; };
+		B51926E5EE8BA378F2E05028 /* StoryfyTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryfyTheme.swift; sourceTree = "<group>"; };
+		C8836CF068BF003D09015B67 /* Storyfy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Storyfy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD95570F3DD402C02D7F1348 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E65BA9C5FB2DA41893292248 /* CaptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptionView.swift; sourceTree = "<group>"; };
+		EE0AA6EC251A29BAD7FA501E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1BA7053A81D8DAC867DA8FF3 /* Storyfy */ = {
+			isa = PBXGroup;
+			children = (
+				1533E480F21A2CB32C5E63B5 /* AppModel.swift */,
+				EE0AA6EC251A29BAD7FA501E /* Assets.xcassets */,
+				63F10C25173BD8ED787B2C67 /* StoryfyApp.swift */,
+				80AD3C29F06976C2CA70AB76 /* Design */,
+				D771B259BC57DD1F87B0EBB2 /* Models */,
+				2954EA579A8CC50DE1D29AA5 /* Services */,
+				F53A1B2BA0B0381510DF4D63 /* Views */,
+			);
+			path = Storyfy;
+			sourceTree = "<group>";
+		};
+		2954EA579A8CC50DE1D29AA5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				401A3278F64AB25A82B45CC1 /* CaptionService.swift */,
+				79E7BF2D2B2554081504F726 /* CurationService.swift */,
+				8CC2C0A6F841E72EEE244B4C /* PersistenceStore.swift */,
+				721C373753FFEA7AB1D0BB08 /* PhotoLibraryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2F2D59C9AD5C2BFC54B5ED43 /* StoryfyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DC8F957F32BBF726D7E1292 /* MonthIntervalTests.swift */,
+				95EE23B9595E8BC279E1D685 /* PersistenceStoreTests.swift */,
+			);
+			path = StoryfyTests;
+			sourceTree = "<group>";
+		};
+		2F2E06F679F9A3560CC332CF = {
+			isa = PBXGroup;
+			children = (
+				1BA7053A81D8DAC867DA8FF3 /* Storyfy */,
+				2F2D59C9AD5C2BFC54B5ED43 /* StoryfyTests */,
+				BE174D66384355C6AE4B97A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80AD3C29F06976C2CA70AB76 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				B51926E5EE8BA378F2E05028 /* StoryfyTheme.swift */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		BE174D66384355C6AE4B97A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8836CF068BF003D09015B67 /* Storyfy.app */,
+				28005F2C2587EBE2E6364C96 /* StoryfyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D771B259BC57DD1F87B0EBB2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				459CBDBF6243EE0BA1988886 /* StoryfyModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F53A1B2BA0B0381510DF4D63 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E65BA9C5FB2DA41893292248 /* CaptionView.swift */,
+				51BB8A13204993EC517F8590 /* FinishView.swift */,
+				79216DEBC2632B786D893E6C /* HomeView.swift */,
+				9FB89059F82B98DF7A53B8DB /* PhotoThumbnail.swift */,
+				79B24853D0BC7A618FFD62B9 /* PrivacyView.swift */,
+				6A4640E9C4962B0E0DF4611E /* ProcessingView.swift */,
+				66C738EDDD4CA6A82EA93719 /* ReviewView.swift */,
+				CD95570F3DD402C02D7F1348 /* RootView.swift */,
+				1A57BAEB1912233F7FBBD842 /* WritingStyleView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB3581FA78D7EDA09F3CAC3E /* Storyfy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA6120E2AC77E40980F009C /* Build configuration list for PBXNativeTarget "Storyfy" */;
+			buildPhases = (
+				FD466329C59E59A59B0C118F /* Sources */,
+				04050A28B73D1020F5E303D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Storyfy;
+			packageProductDependencies = (
+			);
+			productName = Storyfy;
+			productReference = C8836CF068BF003D09015B67 /* Storyfy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F2AA387E292B94F36B4ACAA7 /* StoryfyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1B0F87C90D6BFAA1A6E8AAC /* Build configuration list for PBXNativeTarget "StoryfyTests" */;
+			buildPhases = (
+				DFF230AEBF9FE3B5F7574F7F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6FDD188F2D1873EA41FCF34B /* PBXTargetDependency */,
+			);
+			name = StoryfyTests;
+			packageProductDependencies = (
+			);
+			productName = StoryfyTests;
+			productReference = 28005F2C2587EBE2E6364C96 /* StoryfyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED12BA94F784E9556C39484 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					DB3581FA78D7EDA09F3CAC3E = {
+						DevelopmentTeam = "";
+					};
+					F2AA387E292B94F36B4ACAA7 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 20733652B7CC5A2BADC91EAB /* Build configuration list for PBXProject "Storyfy" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 2F2E06F679F9A3560CC332CF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BE174D66384355C6AE4B97A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB3581FA78D7EDA09F3CAC3E /* Storyfy */,
+				F2AA387E292B94F36B4ACAA7 /* StoryfyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04050A28B73D1020F5E303D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C0E45E24A0D696862E8AD9D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFF230AEBF9FE3B5F7574F7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25EE40C2F9AC4F9F4D27C790 /* MonthIntervalTests.swift in Sources */,
+				EEBE1A51499999425AC3C0B1 /* PersistenceStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD466329C59E59A59B0C118F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				007148698DD93581EA72AE0D /* AppModel.swift in Sources */,
+				660D4EC438E8A4122ED748E9 /* CaptionService.swift in Sources */,
+				60193FE19AC022D514B89E16 /* CaptionView.swift in Sources */,
+				95000602F9EB51A83FEA7E18 /* CurationService.swift in Sources */,
+				0D65D58B1AEBCE22AAEA3041 /* FinishView.swift in Sources */,
+				811BB54F75207763D21B6B43 /* HomeView.swift in Sources */,
+				0D13A275C01491C47C4B8A99 /* PersistenceStore.swift in Sources */,
+				A0CB273EA9FBC216CC356AC0 /* PhotoLibraryService.swift in Sources */,
+				75128BA9C218F3FB01809A5A /* PhotoThumbnail.swift in Sources */,
+				964432164BA6B3A82809F1C5 /* PrivacyView.swift in Sources */,
+				A47047C4D5D545894873B37C /* ProcessingView.swift in Sources */,
+				206E18DBB81E79220AA32C80 /* ReviewView.swift in Sources */,
+				60BDB92645A449C2BEBE48ED /* RootView.swift in Sources */,
+				7836E3C4D3DFE165086C6E5B /* StoryfyApp.swift in Sources */,
+				04A78998337E7F14554240AF /* StoryfyModels.swift in Sources */,
+				9E35032E5FA1BCAD1AE3E9AD /* StoryfyTheme.swift in Sources */,
+				3299D63E7E1F0161DF5FA8AA /* WritingStyleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FDD188F2D1873EA41FCF34B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB3581FA78D7EDA09F3CAC3E /* Storyfy */;
+			targetProxy = E3BEEAB5DA3DFD975D81AF42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		369BB35A86D0D7A33EE4D1E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Debug;
+		};
+		4C51FEB5D4E4218F66B420BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Storyfy;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "O Storyfy cria um álbum com as fotos que você aprovou.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "O Storyfy usa suas fotos para criar sua retrospectiva mensal no próprio iPhone.";
+				INFOPLIST_KEY_StoryfyCaptionAPIURL = "";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thalesvinkler.storyfy;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		ADB2D6AA78737CF216C33BDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thalesvinkler.StoryfyTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Storyfy.app/Storyfy";
+			};
+			name = Release;
+		};
+		AE93B883E7DDADD78CD8AE47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.1;
+			};
+			name = Release;
+		};
+		B78697759BF899192C295442 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thalesvinkler.StoryfyTests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Storyfy.app/Storyfy";
+			};
+			name = Debug;
+		};
+		C0327ABD5F4CD1D4FC28204B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Storyfy;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "O Storyfy cria um álbum com as fotos que você aprovou.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "O Storyfy usa suas fotos para criar sua retrospectiva mensal no próprio iPhone.";
+				INFOPLIST_KEY_StoryfyCaptionAPIURL = "";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thalesvinkler.storyfy;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20733652B7CC5A2BADC91EAB /* Build configuration list for PBXProject "Storyfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				369BB35A86D0D7A33EE4D1E4 /* Debug */,
+				AE93B883E7DDADD78CD8AE47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6CA6120E2AC77E40980F009C /* Build configuration list for PBXNativeTarget "Storyfy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C51FEB5D4E4218F66B420BC /* Debug */,
+				C0327ABD5F4CD1D4FC28204B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C1B0F87C90D6BFAA1A6E8AAC /* Build configuration list for PBXNativeTarget "StoryfyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78697759BF899192C295442 /* Debug */,
+				ADB2D6AA78737CF216C33BDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED12BA94F784E9556C39484 /* Project object */;
+}

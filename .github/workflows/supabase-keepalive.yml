@@ -1,0 +1,24 @@
+name: Supabase Keep Alive
+
+on:
+  schedule:
+    - cron: "17 11 * * *"
+  workflow_dispatch:
+
+jobs:
+  ping:
+    name: Ping Storyfy Supabase
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: Call keep-alive function
+        env:
+          KEEPALIVE_SECRET: ${{ secrets.STORYFY_KEEPALIVE_SECRET }}
+        run: |
+          test -n "$KEEPALIVE_SECRET"
+          curl --fail-with-body --show-error --silent \
+            --retry 2 \
+            --retry-delay 10 \
+            -H "x-storyfy-keepalive-secret: $KEEPALIVE_SECRET" \
+            "https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/storyfy-keepalive"

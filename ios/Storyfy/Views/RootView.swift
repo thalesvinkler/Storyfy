@@ -8,13 +8,31 @@ struct RootView: View {
             StoryfyBackground()
             Group {
                 switch model.screen {
-                case .welcome: WelcomeView()
                 case .privacy: PrivacyView()
                 case .home: HomeView()
                 case .processing: ProcessingView()
                 case .review: ReviewView()
                 case .caption: CaptionView()
                 case .finish: FinishView()
+                case .writingStyle: WritingStyleView()
+                case .paywall: PaywallView()
+                }
+            }
+            .safeAreaInset(edge: .top, spacing: 0) {
+                if model.canGoBackInStory {
+                    HStack {
+                        Button { model.goBack() } label: {
+                            Image(systemName: "chevron.left")
+                                .font(.headline)
+                                .frame(width: 44, height: 40)
+                                .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("Voltar para etapa anterior")
+                        Spacer()
+                    }
+                    .padding(.horizontal, 12)
+                    .background(StoryfyTheme.paper)
                 }
             }
             .transition(.opacity.combined(with: .move(edge: .trailing)))

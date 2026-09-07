@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>Storyfy</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>br.com.thalesvinkler.storyfy</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>storyfy</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>NSCalendarsFullAccessUsageDescription</key>
+	<string>O Storyfy usa seus eventos para identificar e nomear momentos nas fotos do mês.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>O Storyfy cria um álbum com as fotos que você aprovou.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>O Storyfy usa suas fotos para criar sua retrospectiva mensal no próprio iPhone.</string>
+	<key>StoryfyBillingAPIURL</key>
+	<string>https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/billing-entitlement</string>
+	<key>StoryfyCaptionAPIURL</key>
+	<string>https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/storyfy-caption</string>
+	<key>StoryfyInstagramAPIURL</key>
+	<string>https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/instagram-oauth</string>
+	<key>StoryfyInstagramAppID</key>
+	<string>1372485041694551</string>
+	<key>StoryfySupabasePublishableKey</key>
+	<string>sb_publishable_UIv8Z_3qfE1dONlUz0pghQ_yZP8sk6E</string>
+	<key>StoryfySupabaseURL</key>
+	<string>https://jxxzgnnpfoosvlgbucwx.supabase.co</string>
+	<key>UILaunchScreen</key>
+	<dict/>
+</dict>
+</plist>

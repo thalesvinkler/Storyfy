@@ -1,0 +1,13 @@
+project_id = "jxxzgnnpfoosvlgbucwx"
+
+[functions.instagram-oauth]
+verify_jwt = false
+
+[functions.storyfy-caption]
+verify_jwt = true
+
+[functions.billing-entitlement]
+verify_jwt = true
+
+[functions.storyfy-keepalive]
+verify_jwt = false

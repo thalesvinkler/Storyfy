@@ -1,21 +1,30 @@
 import SwiftUI
 
 enum StoryfyTheme {
-    static let ink = Color(red: 0.10, green: 0.10, blue: 0.12)
-    static let muted = Color(red: 0.42, green: 0.40, blue: 0.40)
-    static let paper = Color(red: 0.98, green: 0.96, blue: 0.92)
-    static let card = Color.white.opacity(0.78)
-    static let coral = Color(red: 0.91, green: 0.34, blue: 0.27)
-    static let gold = Color(red: 0.92, green: 0.67, blue: 0.26)
+    static let ink = Color(uiColor: .label)
+    static let muted = Color(uiColor: .secondaryLabel)
+    static let paper = Color(uiColor: .systemBackground)
+    static let card = Color(uiColor: .secondarySystemBackground)
+    static let coral = Color(uiColor: UIColor { traits in
+        traits.userInterfaceStyle == .dark
+            ? UIColor(red: 1.00, green: 0.44, blue: 0.39, alpha: 1)
+            : UIColor(red: 0.91, green: 0.34, blue: 0.27, alpha: 1)
+    })
+    static let gold = Color(uiColor: UIColor { traits in
+        traits.userInterfaceStyle == .dark
+            ? UIColor(red: 0.96, green: 0.73, blue: 0.30, alpha: 1)
+            : UIColor(red: 0.92, green: 0.67, blue: 0.26, alpha: 1)
+    })
+    static let teal = Color(uiColor: UIColor { traits in
+        traits.userInterfaceStyle == .dark
+            ? UIColor(red: 0.40, green: 0.78, blue: 0.77, alpha: 1)
+            : UIColor(red: 0.12, green: 0.48, blue: 0.48, alpha: 1)
+    })
 }
 
 struct StoryfyBackground: View {
     var body: some View {
-        ZStack {
-            StoryfyTheme.paper.ignoresSafeArea()
-            Circle().fill(StoryfyTheme.coral.opacity(0.12)).frame(width: 300).blur(radius: 20).offset(x: 150, y: -330)
-            Circle().fill(StoryfyTheme.gold.opacity(0.15)).frame(width: 260).blur(radius: 28).offset(x: -160, y: 350)
-        }
+        StoryfyTheme.paper.ignoresSafeArea()
     }
 }
 
@@ -25,8 +34,17 @@ struct PrimaryButtonStyle: ButtonStyle {
             .font(.headline)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 17)
-            .foregroundStyle(.white)
-            .background(StoryfyTheme.ink.opacity(configuration.isPressed ? 0.78 : 1), in: Capsule())
+            .foregroundStyle(StoryfyTheme.paper)
+            .background(StoryfyTheme.ink.opacity(configuration.isPressed ? 0.78 : 1), in: RoundedRectangle(cornerRadius: 8))
             .scaleEffect(configuration.isPressed ? 0.98 : 1)
+    }
+}
+
+struct StoryfyWordmark: View {
+    var body: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "photo.on.rectangle.angled").foregroundStyle(StoryfyTheme.coral)
+            Text("STORYFY").font(.caption.weight(.black)).tracking(2)
+        }
     }
 }

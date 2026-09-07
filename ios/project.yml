@@ -6,21 +6,44 @@ options:
 settings:
   base:
     SWIFT_VERSION: 5.10
-    DEVELOPMENT_TEAM: ""
+    DEVELOPMENT_TEAM: 2362E97GH6
+    CODE_SIGN_STYLE: Automatic
 targets:
   Storyfy:
     type: application
     platform: iOS
     sources:
       - Storyfy
+    info:
+      path: Storyfy/Info.plist
+      properties:
+        CFBundleDisplayName: Storyfy
+        NSPhotoLibraryUsageDescription: O Storyfy usa suas fotos para criar sua retrospectiva mensal no próprio iPhone.
+        NSPhotoLibraryAddUsageDescription: O Storyfy cria um álbum com as fotos que você aprovou.
+        NSCalendarsFullAccessUsageDescription: O Storyfy usa seus eventos para identificar e nomear momentos nas fotos do mês.
+        UILaunchScreen: {}
+        StoryfyCaptionAPIURL: https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/storyfy-caption
+        StoryfyInstagramAPIURL: https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/instagram-oauth
+        StoryfyBillingAPIURL: https://jxxzgnnpfoosvlgbucwx.supabase.co/functions/v1/billing-entitlement
+        StoryfySupabasePublishableKey: sb_publishable_UIv8Z_3qfE1dONlUz0pghQ_yZP8sk6E
+        StoryfySupabaseURL: https://jxxzgnnpfoosvlgbucwx.supabase.co
+        StoryfyInstagramAppID: "1372485041694551"
+        CFBundleURLTypes:
+          - CFBundleURLName: br.com.thalesvinkler.storyfy
+            CFBundleURLSchemes:
+              - storyfy
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: br.com.thalesvinkler.storyfy
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
         TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS: YES
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_CFBundleDisplayName: Storyfy
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: O Storyfy usa suas fotos para criar sua retrospectiva mensal no próprio iPhone.
         INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: O Storyfy cria um álbum com as fotos que você aprovou.
+        INFOPLIST_KEY_NSCalendarsFullAccessUsageDescription: O Storyfy usa seus eventos para identificar e nomear momentos nas fotos do mês.
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
     scheme:
       testTargets:
@@ -30,5 +53,8 @@ targets:
     platform: iOS
     sources:
       - StoryfyTests
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
     dependencies:
       - target: Storyfy
